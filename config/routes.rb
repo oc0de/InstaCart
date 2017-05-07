@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root 'application#hello'
+
+  root 'shoppers#home'
+  # get 'shoppers/home'
   get  '/signup',  to: 'users#new'
   post '/signup',  to: 'users#create'
   resources :users

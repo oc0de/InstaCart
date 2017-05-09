@@ -11,15 +11,25 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:success] = "Welcome to the InstaCart App!"
-      redirect_to @user
+      permission(@user)
     else
       render 'new'
     end
   end
 
-  private
+  def permission(user)
+    @curr_user = user
+    render 'permission'
+    @curr_user.save
 
+  end
+
+  def welcome
+    flash[:success] = "Welcome to the InstaCart App!"
+  end
+
+
+  private
     def user_params
       params.require(:user).permit(:first_name, :last_name, :email, :phone_number, :zip_code, :password, :password_confirmation)
     end

@@ -20,12 +20,16 @@ class UsersController < ApplicationController
   def permission(user)
     @curr_user = user
     render 'permission'
-    @curr_user.save
-
   end
 
   def welcome
-    flash[:success] = "Welcome to the InstaCart App!"
+    @user = User.find(params[:id])
+    if params[:status] == true
+      @user.permission = true
+      @user.save
+    else
+      @user.delete
+    end
   end
 
 

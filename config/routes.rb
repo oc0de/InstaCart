@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
 
   root 'shoppers#home'
-  # get 'shoppers/home'
+
   get  '/signup',  to: 'users#new'
   post '/signup',  to: 'users#create'
-  post '/signup',  to: 'users#welcome'
+
+  get "/shoppers/welcome/" => "users#welcome", :as => :welcome_user
+
+
   resources :users
 
 end

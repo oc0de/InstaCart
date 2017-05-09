@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   # before_save { self.email = email.downcase }
-  # validates :background_check_permission, acceptance: true
+  validates :permission, acceptance: true
   #
   # VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   # validates :email, presence: true, length: { maximum: 255 },

@@ -1,10 +1,16 @@
 <footer class="footer">
   <nav>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <ul>
-      <li><%= link_to "About",   '#' %></li>
-      <li><%= link_to "Contact", '#' %></li>
+      <div class="text-center center-block">
+            <a href="https://www.facebook.com/Instacart/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+            <a href="https://twitter.com/instashoppers?lang=en"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+            <a href="https://plus.google.com/+Instacart"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+            <a href="mailto:shoppers@instacart.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+      </div>
     </ul>
   </nav>
+  
   <small>
     <%= link_to image_tag("instaCa.jpg", alt: "instacart logo", class:"footer-image-container"), 'http://www.instacart.com/' %>
   </small>

@@ -1,30 +1,47 @@
-<h1>Sign up</h1>
-<%= form_for(@user, url: signup_path) do |f| %>
-  <%= render 'shared/error_messages' %>
-  <%= f.label :first_name %>
-  <%= f.text_field :first_name %>
+<div class="signup">
+  <div class="row">
+      <h1>Sign up</h1>
+        <%= render 'shared/error_messages' %>
+        <%= form_for(@user, url: signup_path) do |f| %>
+  			<hr class="colorgraph">
+  			<div class="row">
+  				<div class="col-xs-12 col-sm-6 col-md-6">
+  					<div class="form-group">
+              <%= f.text_field :first_name, :class => "form-control input-lg", :placeholder => "First Name", :tabindex => 1 %>
+  					</div>
+  				</div>
+  				<div class="col-xs-12 col-sm-6 col-md-6">
+  					<div class="form-group">
+               <%= f.text_field :last_name, :class => "form-control input-lg", :placeholder => "Last Name", :tabindex => 2 %>
+  					</div>
+  				</div>
+  			</div>
+        <div class="form-group">
+          <%= f.email_field :email, :class => "form-control input-lg", :placeholder => "Email Address (john@example.com)", :tabindex => 3 %>
+  			</div>
+  			<div class="form-group">
+          <%= f.text_field :phone_number, :class => "form-control input-lg", :placeholder => "Phone Number", :tabindex => 4 %>
+  			</div>
+        <div class="form-group">
+          <%= f.text_field :zip_code, :class => "form-control input-lg", :placeholder => "Zip code", :tabindex => 5 %>
+  			</div>
+        <div class="form-group">
+          <%= f.text_field :ref_code, :class => "form-control input-lg", :placeholder => "Referral Code (optional)", :tabindex => 6 %>
+  			</div>
 
-  <%= f.label :last_name %>
-  <%= f.text_field :last_name %>
+  			<div class="form-group">
+          <%= f.password_field :password, :class => "form-control input-lg", :placeholder => "Password", :tabindex => 7 %>
+  			</div>
 
-  <%= f.label :email %>
-  <%= f.email_field :email %>
+  			<div class="form-group">
+          <%= f.password_field :password_confirmation, :class => "form-control input-lg", :placeholder => "Confirm Password", :tabindex => 8 %>
+  			</div>
 
-  <%= f.label :phone_number %>
-  <%= f.text_field :phone_number %>
-
-  <%= f.label :zip_code %>
-  <%= f.text_field :zip_code %>
-
-  <%= f.label :ref_code %>
-  <%= f.text_field :ref_code %>
-
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-
-  <%= f.label :password_confirmation, "Confirmation" %>
-  <%= f.password_field :password_confirmation %>
-
-  <%= f.submit "Apply Now" %>
-
-<% end %>
+        <hr class="colorgraph">
+  			<div class="form-group">
+          <%= f.submit "Apply Now", :class => "btn btn-primary btn-block btn-lg", :tabindex => 9 %>
+        </div>
+        <% end %>
+  	</div>
+  </div>
+</div>

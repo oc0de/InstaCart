@@ -24,7 +24,8 @@ class UsersController < ApplicationController
 
   def welcome
     @user = User.find(params[:id])
-    if params[:status] == true
+    if params[:status]
+      log_in @user
       @user.permission = true
       @user.save
     else

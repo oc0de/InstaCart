@@ -28,6 +28,7 @@ class UsersController < ApplicationController
       flash[:success] = "Welcome to the instacart!"
       log_in @user
       @user.permission = true
+      @user.workflow_state = 'applied'
       @user.save
     else
       @user.delete

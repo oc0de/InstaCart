@@ -13,11 +13,11 @@ class FunnelsQuery
   private
 
   def week_start
-    "date(created_at, 'weekday 1')" || "DATE_TRUNC('week', created_at)::date"
+    "DATE_TRUNC('week', created_at)::date"
   end
 
   def week_end
-    "date(created_at, 'weekday 1', '+6 days')" ||  "(#{week_start} + '6 days'::interval)::date"
+    "(#{week_start} + '6 days'::interval)::date"
   end
 
   def date_to_string(d)

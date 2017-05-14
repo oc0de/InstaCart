@@ -14,10 +14,12 @@ class FunnelsQuery
 
   def week_start
     "DATE_TRUNC('week', created_at)::date"
+    # "date(created_at, 'weekday 1')"   #sqlite3
   end
 
   def week_end
     "(#{week_start} + '6 days'::interval)::date"
+    # "date(created_at, 'weekday 1', '+6 days')"  #sqlite3
   end
 
   def date_to_string(d)

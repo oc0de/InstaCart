@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'funnels/index'
+
   get 'sessions/new'
   root 'shoppers#home'
 
@@ -13,5 +15,7 @@ Rails.application.routes.draw do
   delete '/logout',  to: 'sessions#destroy'
 
   resources :users
+  resources :funnels, only: [:index]
+
 
 end

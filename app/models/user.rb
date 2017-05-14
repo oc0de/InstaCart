@@ -3,8 +3,7 @@ class User < ApplicationRecord
 
   before_save { self.email = email.downcase }
   before_validation :initial_workflow_state, on: :create
-
-  validates :permission, acceptance: true
+  before_validation :initial_background_check, on: :create
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, length: { maximum: 255 },
@@ -17,8 +16,7 @@ class User < ApplicationRecord
   validates :last_name, presence: true,
                     length: { minimum: 3, maximum: 50 }
 
-  validates :phone_number, presence: true, length: { maximum: 10 },
-                           uniqueness: true
+  validates :phone_number, presence: true, uniqueness: true
 
   validates :zip_code, presence: true
 
@@ -29,18 +27,13 @@ class User < ApplicationRecord
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
 
-  def update_next_workflow_state
-    current_index = WORKFLOW_STATES.index workflow_state
-    if current_index == WORKFLOW_STATES.size - 1
-      return
-    end
-    index = current_index ? current_index + 1 : 0
-    update workflow_state: WORKFLOW_STATES[index]
-  end
-
   private
     def initial_workflow_state
       self.workflow_state = WORKFLOW_STATES.first unless workflow_state
+    end
+
+    def initial_background_check
+      self.permission = false
     end
 
 end

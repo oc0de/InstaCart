@@ -23,15 +23,14 @@ class UsersController < ApplicationController
   end
 
   def welcome
-    @user = User.find(params[:id])
+    @applicant = User.find(params[:id])
     if params[:status]
       flash[:success] = "Welcome to the instacart!"
-      log_in @user
-      @user.permission = true
-      @user.workflow_state = 'applied'
-      @user.save
+      log_in @applicant
+      @applicant.update_attribute(:permission, true)
+      @applicant.save
     else
-      @user.delete
+      @applicant.delete
     end
   end
 

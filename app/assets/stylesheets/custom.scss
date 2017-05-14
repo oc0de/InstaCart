@@ -5,6 +5,7 @@
 
 body {
   padding-top: 60px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 section {
@@ -24,9 +25,14 @@ textarea {
 }
 
 .maincontainer {
-  background: #e3e3e3;
+  background: #90EE90;
   margin-bottom: 0px;
   padding-bottom: 665px;
+  padding-top: 15px
+}
+
+.benefits {
+  padding-top: 5px
 }
 
 /* typography */
@@ -43,10 +49,20 @@ h1 {
 }
 
 h2 {
+  font-size: 2.2em;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: normal;
+  color: #E3123C;
+}
+
+h3 {
   font-size: 1.2em;
   letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  text-align: left;
   font-weight: normal;
   color: #777;
 }
@@ -117,7 +133,8 @@ footer {
 
 .signup {
    background-color:#D3D3D3;
-    padding: 15px 20px;
+    padding: 1px 20px;
+
 }
 
 

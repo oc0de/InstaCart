@@ -41,7 +41,7 @@ class FunnelsController < ApplicationController
       hash[key] = {} if hash[key].nil?
       hash[key][res["workflow_state"]] = res["count"]
     end
-    hash
+    return hash
   end
 
 end

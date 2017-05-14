@@ -1,0 +1,185 @@
+commit c51330f633b7fa2714acc77d2ce9809ee3d73058
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sun May 14 18:07:17 2017 -0500
+
+    Add production funnels api link to funnels index
+
+commit 8a2977c40fcf5cf34faf101ab90ad482d06b23d9
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sun May 14 17:56:05 2017 -0500
+
+    sql query funnels
+
+commit 64bb3a7ec24fe8f24ad7552fdfd4938004e991ea
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sun May 14 17:53:06 2017 -0500
+
+    change date function for pg database
+
+commit 0f3f4a21efe45104d61ee496da066efea3e4068c
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sun May 14 17:41:04 2017 -0500
+
+    add date trunc to funnels query
+
+commit 6e7a58e7a91e5d00f09e37283938bad621145ec9
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sun May 14 17:27:48 2017 -0500
+
+    move lib dir to app dir
+
+commit be1e3b925219ae687a2e1ea2c7fb86aae40cd03c
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sun May 14 17:15:24 2017 -0500
+
+    Update route.rb
+
+commit 54c4e65fc8846d1dde9fc45efbedc79508be1b4e
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sun May 14 15:41:44 2017 -0500
+
+    add funnels api / css refactor
+
+commit 4cbba4e40fc827fb937f50b9f6a51328d1f70eb3
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sat May 13 00:31:11 2017 -0500
+
+    add instagram to footer
+
+commit 4aaddcc172a475b89378f62673f9454cdce26511
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sat May 13 00:25:11 2017 -0500
+
+    add workflow state to users model
+
+commit eb5aa0a711c5c82f42bc353d009e106853899ae2
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Fri May 12 02:24:05 2017 -0500
+
+    Update footer logo
+
+commit 2653700b834bccf04c3bdf13fde56db428c5c6b9
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Fri May 12 02:12:36 2017 -0500
+
+    add update profile / add instacart header logo
+
+commit 2d92ed45d8945394820ac44b6366395a1605cb10
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Fri May 12 01:21:14 2017 -0500
+
+    add instacart video
+
+commit 4980fac314c54919b2e5b9f02a1b52a4890d5795
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Thu May 11 21:49:09 2017 -0500
+
+    Finish user signup
+
+commit b9e9df84d8adde5b3e832e02454f17a4d14714b1
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Wed May 10 23:45:15 2017 -0500
+
+    Add social media to footer
+
+commit e0f35174d56077825be10e63b91326b075d6519a
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Wed May 10 21:12:28 2017 -0500
+
+    add style to signup form
+
+commit 7249d6e2caaf82301cd2d8875329f48e3bd5e566
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Tue May 9 03:19:11 2017 -0500
+
+    add welcome page after user agree with background checking
+
+commit 0448a2be9a85888206ff42cb4e65972d60b5db4a
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Mon May 8 21:51:03 2017 -0500
+
+    add permission to users table
+
+commit 360311a1a41a1a6de07563372f919b70345a73fa
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sun May 7 19:47:33 2017 -0500
+
+    Remove name field from users table
+
+commit 361cadcb3f10f848519dc48cf4abe1272b2e3b95
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sun May 7 19:45:08 2017 -0500
+
+    Add background check permission field users table
+
+commit 86d47d1a52b3badca66bf3ad3f02dd569dae8c15
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sun May 7 19:30:19 2017 -0500
+
+    Add signup-form partial
+
+commit fc8697eff4e08fd248549015bfccf53f58921b88
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sun May 7 18:58:42 2017 -0500
+
+    Add shoppers controller
+
+commit b7b732440d4ccca933a257268964d94e1896a33b
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sun May 7 18:49:49 2017 -0500
+
+    Remove welcomepage controller
+
+commit 9c7cecda7d574f303d5b92957b7e23eda225eb1f
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sun May 7 18:43:39 2017 -0500
+
+    Add a welcome page controller
+
+commit 8e2182d47485a375dcc1ea8c070f9891ef761a42
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sun May 7 18:32:31 2017 -0500
+
+    Use SSL and the Puma webserver in production | refactor routes
+
+commit 300b6ca8a268303438082000275d61e75f929214
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sun May 7 18:25:43 2017 -0500
+
+    Finish user signup
+
+commit aaa5644dd62933d3c9c7db2a2fb3bbf032435223
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sun May 7 16:20:56 2017 -0500
+
+    Make a basic User model (including secure password)
+
+commit 7e08fd01db86a717f1569dad80dc13e755ddef5f
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sat May 6 21:54:15 2017 -0500
+
+    Update gemfile for Heroku
+
+commit b410496270632adc559a4a2fd0249b014357945e
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sat May 6 21:50:31 2017 -0500
+
+    Update gemfile
+
+commit adc877320159ab66e35d21a296f840ed372fb7ac
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sat May 6 21:34:50 2017 -0500
+
+    Add hello
+
+commit 5c06020e08b45e4939a55438ef45aa0ee3c0fcc2
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sat May 6 21:28:48 2017 -0500
+
+    Add the README
+
+commit dcdb28d064404f68d2112e4000fd6ba95e9a8965
+Author: Ehsan <valizade@mail.gvsu.edu>
+Date:   Sat May 6 21:25:37 2017 -0500
+
+    Initialize repository
